@@ -77,7 +77,19 @@ def correct(sudoku, r, c, n):
 
     # checks if number does not already appear in the row
     for i in range(8):
-        if sudoku[i] == n:
+        if sudoku[r][i] == n:
             return False
 
-    # checks if number does not al
+    # checks if number does not already appear in the column
+    for j in range(8):
+        if sudoku[j][c] == n:
+            return False
+
+    # checks if number does not already appear in its 3x3 square
+    for i in range(r, r + 2):
+        for j in range(c, c + 2):
+            if sudoku[i][j] == n:
+                return False
+
+    return True
+
