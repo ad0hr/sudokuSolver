@@ -90,6 +90,7 @@ def correct(sudoku, r, c, n):
         for j in range(c, c + 2):
             if sudoku[i][j] == n:
                 return False
-
     return True
+
+def 
 
