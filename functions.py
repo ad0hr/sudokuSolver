@@ -73,6 +73,9 @@ def correct(sudoku, r, c, n):
     returns:
     True (boolean)
         if the number can be placed at position, returns False otherwise
+    --------
+    notes:
+        index is from 0 to 8
     """
 
     # checks if number does not already appear in the row
@@ -92,5 +95,4 @@ def correct(sudoku, r, c, n):
                 return False
     return True
 
-def 
 
